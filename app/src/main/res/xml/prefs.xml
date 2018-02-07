@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <CheckBoxPreference
+        android:title="On Start"
+        android:defaultValue="true"
+        android:key="checkbox"
+        android:summary="Switch on Bluetooth on start"
+        />
+    <CheckBoxPreference
+        android:title="Default behavior"
+        android:defaultValue="false"
+        android:key="checkbox2"
+        android:summary="Always connect to the last selected device"
+        />
+    <CheckBoxPreference
+        android:title="Upon Pasting"
+        android:defaultValue="false"
+        android:key="checkbox3"
+        android:summary="Immediately send text after pasting"
+        />
+    <!--
+    <ListPreference
+        android:entries="@array/list"
+        android:entryValues="@array/lvalues"
+        android:key="list"
+        android:summary="Choose a background"
+        android:title="Background" />
+    -->
+
+
+
+
+</PreferenceScreen>
