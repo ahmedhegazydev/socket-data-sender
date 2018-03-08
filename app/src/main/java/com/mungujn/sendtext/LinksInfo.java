@@ -23,7 +23,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 /**
- * Created by Prime on 14/01/2015.
+ * Created by Nickson on 14/01/2015.
  */
 public class LinksInfo extends ActionBarActivity {
     TextView three,four;

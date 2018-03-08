@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.SpinnerAdapter;
 
 /**
- * Created by Prime on 11/01/2015.
+ * Created by Nickson on 11/01/2015.
  */
 public class Prefs extends PreferenceFragment{
     @Override

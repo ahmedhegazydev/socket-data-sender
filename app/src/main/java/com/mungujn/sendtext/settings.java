@@ -7,7 +7,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 
 /**
- * Created by Prime on 11/01/2015.
+ * Created by Nickson on 11/01/2015.
  */
 public class settings extends ActionBarActivity {
     @Override

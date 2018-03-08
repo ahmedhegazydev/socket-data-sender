@@ -20,7 +20,7 @@ import android.os.Message;
 import android.preference.PreferenceManager;
 import android.util.Log;
 /**
- * Created by Prime on 08/01/2015.
+ * Created by Nickson on 08/01/2015.
  */
 public class BluetoothService {
     // Debugging

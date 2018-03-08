@@ -22,7 +22,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by Prime on 27/01/2015.
+ * Created by Nickson on 27/01/2015.
  */
 public class SendAsset extends ActionBarActivity implements View.OnClickListener {
     TextView textView;

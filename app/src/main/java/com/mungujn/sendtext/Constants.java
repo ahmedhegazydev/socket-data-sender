@@ -1,7 +1,7 @@
 package com.mungujn.sendtext;
 
 /**
- * Created by Prime on 21/01/2015.
+ * Created by Nickson on 21/01/2015.
  */
 public interface Constants {
 

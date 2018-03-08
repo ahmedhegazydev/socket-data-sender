@@ -15,8 +15,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
@@ -90,10 +88,6 @@ public class MainAct extends ActionBarActivity implements View.OnClickListener {
     BluetoothDevice device;
     BluetoothAdapter adapter;
     BluetoothService bluetoothservice=null;
-    public LocationManager locationManager;
-    public Location lct;
-
-
 
     public static final int MESSAGE_STATE_CHANGE = 1;
     public static final int MESSAGE_READ = 2;
@@ -152,9 +146,6 @@ public class MainAct extends ActionBarActivity implements View.OnClickListener {
 
     }
     void initializeVars(){
-        locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        String locationProvider = LocationManager.NETWORK_PROVIDER;
-        lct = locationManager.getLastKnownLocation(locationProvider);
         btDef=true;
         btDef2=false;
         bluetoothservice=null;
@@ -454,63 +445,6 @@ Activity activity = this;
             View rootView = inflater.inflate(R.layout.fragmentmy, container, false);
             return rootView;
         }
-    }
-    public static class AdFragment extends Fragment {
-        Context ctxt;
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ctxt = activity.getApplication().getApplicationContext();
-        }
-
-        private AdView mAdView;
-
-        public AdFragment() {
-        }
-
-        @Override
-        public void onActivityCreated(Bundle bundle) {
-            super.onActivityCreated(bundle);
-            mAdView = (AdView) getView().findViewById(R.id.adView);
-            mAdView.loadAd(new AdRequest.Builder().build());
-
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            return inflater.inflate(R.layout.fragmentad, container, false);
-        }
-
-        /** Called when leaving the activity */
-        @Override
-        public void onPause() {
-            if (mAdView != null) {
-                mAdView.pause();
-
-            }
-            super.onPause();
-        }
-
-        /** Called when returning to the activity */
-        @Override
-        public void onResume() {
-            super.onResume();
-            if (mAdView != null) {
-                mAdView.resume();
-            }
-        }
-
-        /** Called before the activity is destroyed */
-        @Override
-        public void onDestroy() {
-            if (mAdView != null) {
-                mAdView.destroy();
-            }
-            super.onDestroy();
-        }
-
     }
 
 }
