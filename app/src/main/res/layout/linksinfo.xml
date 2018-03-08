@@ -170,13 +170,5 @@ android:layout_marginBottom="40dp"
         android:text="Rate"
         android:id="@+id/rate" />
 
-    <fragment
-        android:layout_weight="2"
-        android:id="@+id/adFragment"
-        android:name="com.munsoft.sendtext.LinksInfo$AdFragment"
-        android:layout_width="fill_parent"
-        android:layout_height="51dp"
-        tools:layout="@layout/fragmentad"/>
-
 </LinearLayout>
     </ScrollView>

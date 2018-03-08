@@ -19,8 +19,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 import java.util.Random;
 
@@ -65,75 +63,4 @@ public class LinksInfo extends ActionBarActivity {
             Toast.makeText(this, " unable to find market app", Toast.LENGTH_LONG).show();
         }
     }
-    public static class AdFragment extends Fragment {
-        Context ctxt;
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ctxt = activity.getApplication().getApplicationContext();
-        }
-
-        private AdView mAdView;
-
-        public AdFragment() {
-        }
-
-        @Override
-        public void onActivityCreated(Bundle bundle) {
-            super.onActivityCreated(bundle);
-
-
-            // Gets the ad view defined in layout/ad_fragment.xml with ad unit ID set in
-            // values/strings.xml.
-            mAdView = (AdView) getView().findViewById(R.id.adView);
-            {
-                LocationManager locationManager = (LocationManager) ctxt.getSystemService(Context.LOCATION_SERVICE);
-
-                String locationProvider = LocationManager.NETWORK_PROVIDER;
-                Location lct = locationManager.getLastKnownLocation(locationProvider);
-                AdRequest adRequest = new AdRequest.Builder().setLocation(lct).build();
-                // Start loading the ad in the background.
-                mAdView.loadAd(adRequest);
-            }
-
-
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            return inflater.inflate(R.layout.fragmentad2, container, false);
-        }
-
-        /** Called when leaving the activity */
-        @Override
-        public void onPause() {
-            if (mAdView != null) {
-                mAdView.pause();
-
-            }
-            super.onPause();
-        }
-
-        /** Called when returning to the activity */
-        @Override
-        public void onResume() {
-            super.onResume();
-            if (mAdView != null) {
-                mAdView.resume();
-            }
-        }
-
-        /** Called before the activity is destroyed */
-        @Override
-        public void onDestroy() {
-            if (mAdView != null) {
-                mAdView.destroy();
-            }
-            super.onDestroy();
-        }
-
-    }
-
 }

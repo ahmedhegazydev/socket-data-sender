@@ -56,13 +56,6 @@
     tools:layout="@layout/fragmentmy">
 
     </fragment>
-    <fragment
-        android:layout_weight="2"
-        android:id="@+id/adFragment"
-        android:name="com.munsoft.sendtext.MainAct$AdFragment"
-        android:layout_width="fill_parent"
-        android:layout_height="51dp"
-        tools:layout="@layout/fragmentad"/>
 
 
 </LinearLayout>
