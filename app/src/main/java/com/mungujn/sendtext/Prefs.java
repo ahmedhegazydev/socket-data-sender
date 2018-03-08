@@ -1,4 +1,4 @@
-package com.munsoft.sendtext;
+package com.mungujn.sendtext;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.munsoft.sendtext;
+package com.mungujn.sendtext;
 
 import android.content.Context;
 import android.content.Intent;
@@ -30,7 +30,7 @@ public class SendAsset extends ActionBarActivity implements View.OnClickListener
     ProgressBar progressBar;
     File toSend;
 
-    String storageDir="/storage/sdcard0/Android/data/com.munsoft.sendtext/files/munsoft";
+    String storageDir="/storage/sdcard0/Android/data/com.mungujn.sendtext/files/mungujn";
     @Override
     protected void onStart() {
         super.onStart();
@@ -41,7 +41,7 @@ public class SendAsset extends ActionBarActivity implements View.OnClickListener
         generate.setOnClickListener(this);
         send.setOnClickListener(this);
         //send.setEnabled(false);
-        //toSend = new File( Environment.getExternalStorageDirectory().toString() + "/munsoft/Simple VLC Remote Client.jar");
+        //toSend = new File( Environment.getExternalStorageDirectory().toString() + "/mungujn/Simple VLC Remote Client.jar");
 
         // if(toSend.exists()&&toSend!=null){toSend.delete();}
 
@@ -51,7 +51,7 @@ public class SendAsset extends ActionBarActivity implements View.OnClickListener
 
     //a handle to the application's resources
     private Resources resources;
-    String fileName="munsoft_debug_btm.mp3";
+    String fileName="mungujn_debug_btm.mp3";
     //a string to output the contents of the files to LogCat
 
     public File internal;
@@ -70,9 +70,9 @@ public class SendAsset extends ActionBarActivity implements View.OnClickListener
         send = (Button)findViewById(R.id.send);
         generate.setOnClickListener(this);
         send.setOnClickListener(this);
-        temp= new File("/storage/sdcard0/Android/data/com.munsoft.sendtext/files/munsoft");
+        temp= new File("/storage/sdcard0/Android/data/com.mungujn.sendtext/files/mungujn");
         //send.setEnabled(false);
-        //toSend = new File( Environment.getExternalStorageDirectory().toString() + "/munsoft/Simple VLC Remote Client.jar");
+        //toSend = new File( Environment.getExternalStorageDirectory().toString() + "/mungujn/Simple VLC Remote Client.jar");
 
         // if(toSend.exists()&&toSend!=null){toSend.delete();}
 
@@ -80,7 +80,7 @@ public class SendAsset extends ActionBarActivity implements View.OnClickListener
         resources = getResources();
 
         if(isExternalStorageWritable()&&isExternalStorageReadable()&&!temp.exists()){
-            temp = getFileStorageDir(this,"munsoft");
+            temp = getFileStorageDir(this,"mungujn");
         }else if (!isExternalStorageWritable()||!isExternalStorageReadable());
 
     }

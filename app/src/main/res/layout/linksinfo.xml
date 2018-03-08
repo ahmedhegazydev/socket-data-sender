@@ -146,7 +146,7 @@
     <fragment
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:name="com.munsoft.sendtext.MainAct$PlaceholderFragment"
+        android:name="com.mungujn.sendtext.MainAct$PlaceholderFragment"
         tools:layout="@layout/fragmentmy">
 
     </fragment>

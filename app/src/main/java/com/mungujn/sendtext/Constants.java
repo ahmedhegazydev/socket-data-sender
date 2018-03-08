@@ -1,4 +1,4 @@
-package com.munsoft.sendtext;
+package com.mungujn.sendtext;
 
 /**
  * Created by Prime on 21/01/2015.

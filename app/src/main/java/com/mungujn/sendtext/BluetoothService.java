@@ -1,4 +1,4 @@
-package com.munsoft.sendtext;
+package com.mungujn.sendtext;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -54,7 +54,7 @@ public class BluetoothService {
     public static final int CONNECTED_THREAD = 9;
     public static final int ERROR_DURING_WRITE = 10;
     public static final int RECIEVED_MESSAGE = 11;
-    private static final String NAME_SECURE = "Munsoft";
+    private static final String NAME_SECURE = "mungujn";
     boolean btDef;
 
     public BluetoothService(Context context, Handler handler) {

@@ -1,4 +1,4 @@
-package com.munsoft.sendtext;
+package com.mungujn.sendtext;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -53,8 +53,8 @@ public class LinksInfo extends ActionBarActivity {
         });
     }
     private void launchMarket() {
-        //Uri uri2 = Uri.parse("https://play.google.com/store/apps/details?id=com.munsoft.simplevlcremote");
-        Uri uri1 = Uri.parse("market://details?id=" + "com.munsoft.sendtext");
+        //Uri uri2 = Uri.parse("https://play.google.com/store/apps/details?id=com.mungujn.simplevlcremote");
+        Uri uri1 = Uri.parse("market://details?id=" + "com.mungujn.sendtext");
         //Uri uri = Uri.parse("market://details?id=" + getPackageName());
         Intent myAppLinkToMarket = new Intent(Intent.ACTION_VIEW, uri1);
         try {

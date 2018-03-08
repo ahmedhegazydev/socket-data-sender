@@ -1,4 +1,4 @@
-package com.munsoft.sendtext;
+package com.mungujn.sendtext;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
