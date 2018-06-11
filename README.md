@@ -10,12 +10,16 @@ An android application that allows users to chat over bluetooth
             <p>Screenshot 1</p>
         </div>
         <div class="imgContainer">
-            <img class="middle-img" src="https://raw.githubusercontent.com/mungujn/android-bluetooth-chat/master/static/old.JPG"/>
+            <img class="middle-img" src="https://raw.githubusercontent.com/mungujn/android-bluetooth-chat/master/static/old.png"/>
             <p>Screenshot 2</p>
         </div>
         <div class="imgContainer">
-             <img src="https://raw.githubusercontent.com/mungujn/android-bluetooth-chat/master/static/old-list.JPG"/>
+             <img src="https://raw.githubusercontent.com/mungujn/android-bluetooth-chat/master/static/old-list.png"/>
             <p>Screenshot 3</p>
+        </div>
+        <div class="imgContainer">
+             <img src="https://raw.githubusercontent.com/mungujn/android-bluetooth-chat/master/static/paste.png"/>
+            <p>Screenshot 4</p>
         </div>
 </div>
 
