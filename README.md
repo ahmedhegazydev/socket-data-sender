@@ -1,4 +1,5 @@
-# android-bluetooth-chat
+# Android Bluetooth Chat
+
 An android application that allows users to chat over bluetooth
 
 <link rel="stylesheet" type="text/css" media="all" href="https://raw.githubusercontent.com/mungujn/android-bluetooth-chat/master/static/style.css" />
