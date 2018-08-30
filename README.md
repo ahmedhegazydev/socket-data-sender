@@ -23,5 +23,5 @@ An android application that allows users to chat over bluetooth
         </div>
 </div>
 
-I built this back in 2015 and just recently came across it in my backups and decided to dust it up and upload, maybe someone could gain some value out of it.
+I built and [published](https://apkpure.com/bluetooth-multi-chat/com.munsoft.sendtext) this back in 2015 and just recently came across it's source in my backups. I decided to dust it up and open source it, maybe someone could gain some value out of it.
 Of course, the android platform has changed quite a bit since 2015 so the dust up has not been very thorough, but the app still builds.
