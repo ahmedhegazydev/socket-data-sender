@@ -8,8 +8,6 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,12 +18,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Random;
 
 /**
  * Created by Nickson on 14/01/2015.
  */
-public class LinksInfo extends ActionBarActivity {
+public class LinksInfo extends AppCompatActivity {
     TextView three,four;
     Button generate,rate;
     @Override

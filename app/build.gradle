@@ -1,16 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.mungujn.sendtext"
-        minSdkVersion 14
-        targetSdkVersion 25
-        versionCode 6
-        versionName "1.2"
+        applicationId "com.safasoft.bluetoothcommunicationandroid"
+        minSdkVersion 21
+//        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -22,6 +25,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile 'androidx.appcompat:appcompat:1.0.0'
 }
 

@@ -8,9 +8,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -22,6 +19,8 @@ import android.widget.TextView;
 
 //import com.example.android.common.logger.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Set;
 
 /**
@@ -30,7 +29,7 @@ import java.util.Set;
  * by the user, the MAC address of the device is sent back to the parent
  * Activity in the result Intent.
  */
-public class DeviceListActivity extends  Activity {
+public class DeviceListActivity extends AppCompatActivity {
 
     /**
      * Tag for Log

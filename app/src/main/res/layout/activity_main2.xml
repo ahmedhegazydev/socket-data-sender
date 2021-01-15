@@ -4,8 +4,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
     android:weightSum="10"
+    android:id="@+id/ll_activity_main_2"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="1dp" tools:context=".MainActivity"
+    android:paddingBottom="1dp"
+    tools:context=".MainAct"
     android:background="#42000000">
 
     <TextView android:text="Status: " android:layout_width="wrap_content"
@@ -36,9 +38,11 @@
             <EditText
                 android:id="@+id/edit_text_out"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="200dp"
                 android:layout_gravity="bottom"
                 android:textColor="#ff000000"
+                android:text=""
+                android:focusable="false"
                 android:layout_weight="1" />
 
             <Button
@@ -49,13 +53,12 @@
         </LinearLayout>
 
     </LinearLayout>
-<fragment
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:name="com.mungujn.sendtext.MainAct$PlaceholderFragment"
-    tools:layout="@layout/fragmentmy">
 
-    </fragment>
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.mungujn.sendtext.MainAct$PlaceholderFragment"
+        tools:layout="@layout/fragmentmy" />
 
 
 </LinearLayout>
